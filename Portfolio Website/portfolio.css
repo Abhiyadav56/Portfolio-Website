@@ -1,0 +1,796 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+[id]
+{
+    scroll-margin-top: 70px;
+}
+
+/* header */
+
+.header
+{
+    width: 100%;
+    height: 50px;
+    background-color: #e2e0e0;   
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding-left:5% ;
+    padding-right: 5%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo
+{
+    width: 15%;
+    height: 100%;
+    background-color: #e2e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;  
+    cursor: pointer;
+}
+
+.nav
+{
+    width: 42%;
+    height: 100%;
+    background-color:#e2e0e0;
+    font-size: small;
+}
+
+.nav-links
+{
+    width: 100%;
+    height: 100%;
+    background-color: #e2e0e0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;    
+}
+
+.nav-item
+{
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.nav-item:hover
+{
+    color: rgba(114, 51, 214, 0.821);
+}
+
+.nav-item:focus-visible
+{
+    outline: 2px solid rgba(114, 51, 214, 0.821);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* banner */
+
+.banner
+{
+    width: 100%;
+    height: 700px;
+    background-color:  #e2e0e0;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.details
+{
+    width: 60%;
+    padding: 20px;
+    background-color: #e2e0e0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.t1
+{
+   font-size: 60px;
+}
+
+.t2
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(114, 51, 214, 0.821);
+}
+
+.t3
+{   
+    font-size: 20px;
+}
+
+.cta
+{
+    padding: 10px 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(114, 51, 214, 0.821);
+    border: 2px solid rgba(114, 51, 214, 0.821);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cta:hover
+{
+    background-color: transparent;
+    color: white;
+}
+
+.person
+{
+    width: 30%;
+    height: 420px;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 12px;
+} 
+
+.hero-image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* services */
+
+.services
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: white;   
+}
+
+.section-title
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.section-child
+{
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 30px;
+    display: flex;
+    column-gap: 4%;
+}
+
+
+.service
+{
+    width: 22%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    row-gap: 10px;
+    box-shadow: 0 0 2px gray;
+    border-radius: 10px;
+}
+
+.project-grid
+{
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.project-card
+{
+    width: calc((100% - 48px) / 3);
+    height: auto;
+    min-height: 320px;
+    justify-content: flex-start;
+    padding: 24px;
+    row-gap: 14px;
+}
+
+.project-card h2
+{
+    line-height: 1.25;
+    min-height: 56px;
+}
+
+.project-card p
+{
+    line-height: 1.45;
+}
+
+.project-card .service-text
+{
+    font-weight: 700;
+}
+
+.project-card .know
+{
+    margin-top: auto;
+}
+
+@media (max-width: 1200px)
+{
+    .project-card
+    {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .about-card
+    {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media (max-width: 900px)
+{
+    .project-card
+    {
+        width: calc((100% - 24px) / 2);
+        min-height: 300px;
+    }
+
+    .about-card
+    {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .project-card
+    {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .document-card
+    {
+        width: 100%;
+    }
+}
+
+.know
+{
+    padding: 10px 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(114, 51, 214, 0.821);
+    border: 2px solid rgba(114, 51, 214, 0.821);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.know:hover
+{
+    background-color: transparent;
+    color: black;
+}
+
+.service-text
+{
+    font-size: 15px;
+}
+
+/* work experience */
+
+.work-experience
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #ffffff;
+}
+
+.work-subsections
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.work-subsection
+{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 2px gray;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.work-subsection h2
+{
+    font-size: 30px;
+}
+
+.work-subsection p
+{
+    line-height: 1.5;
+}
+
+.internship-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.internship-info
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.internship-docs
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.internship-doc
+{
+    width: calc((100% - 16px) / 2);
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.internship-doc h3
+{
+    font-size: 18px;
+}
+
+.internship-doc .document-preview
+{
+    height: 260px;
+}
+
+/* about */
+
+.about-profile
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #f5f5f5;
+}
+
+.about-grid
+{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.education-grid .about-card
+{
+    width: 100%;
+    min-height: auto;
+}
+
+.activities-grid .about-card
+{
+    width: calc((100% - 24px) / 2);
+}
+
+.about-card
+{
+    width: calc((100% - 48px) / 3);
+    min-height: 280px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 2px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-card h2
+{
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.about-card p
+{
+    line-height: 1.45;
+}
+
+.about-highlight
+{
+    font-weight: 700;
+    color: rgba(114, 51, 214, 0.821);
+}
+
+.about-meta
+{
+    font-size: 14px;
+}
+
+.doc-links
+{
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.doc-btn
+{
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: rgba(114, 51, 214, 0.821);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(114, 51, 214, 0.821);
+    font-size: 14px;
+    transition: .2s;
+}
+
+.doc-btn:hover
+{
+    background-color: transparent;
+    color: #111;
+}
+
+.doc-btn-alt
+{
+    background-color: #fff;
+    color: #111;
+}
+
+/* documents */
+
+.documents
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #ffffff;
+}
+
+.documents-grid
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.document-card
+{
+    width: calc((100% - 24px) / 2);
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 2px gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.document-preview
+{
+    width: 100%;
+    height: 360px;
+    border: 1px solid #d6d3d3;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.document-actions
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px)
+{
+    .internship-content
+    {
+        flex-direction: column;
+    }
+
+    .internship-info,
+    .internship-docs
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .internship-docs
+    {
+        flex-direction: column;
+    }
+
+    .internship-doc
+    {
+        width: 100%;
+    }
+}
+
+/* acheivments */
+
+
+.acheivements
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #d6d3d3;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+
+.acheivement
+{
+   width: 18%; 
+   padding: 20px ;
+   background-color: #d6d3d3;
+}
+
+.acheivement-child
+{
+    row-gap: 2.5%;
+}
+
+.number
+{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.tag
+{
+    font-size: 18px;
+    
+}
+
+/* quote */
+
+.quote
+{
+    width: 100%;
+    height: 400px;
+    /* padding: 0px 10%; */
+    background-size: cover;
+    background-color: red;
+    background-image: url(https://wallpapercave.com/wp/wp6351122.jpg);
+}
+
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px 10%;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+}
+.quote-area
+{
+    width: 100%;
+    padding: 30px 10%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.inp-email
+{
+    width: 80%;
+    height: 40px;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    text-indent: 20px;
+    background-color: transparent;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+.quote-message
+{
+    min-height: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #fff;
+}
+
+.quote-message.error
+{
+    color: #ffd7d7;
+}
+
+.quote-message.success
+{
+    color: #c8ffd3;
+}
+
+/* clients */
+
+.clients
+{
+    width: 100%;
+    padding: 30px 5%;
+    /* background-color:  #d6d3d3; */
+    margin-top: 25px;
+}
+
+.client-section-child
+{
+    /* background-color: white; */
+    margin-top: 20px;
+    /* font-size: 60px;  */
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-img
+{
+    filter: none;
+    opacity: 0.9;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.client-img:hover
+{
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
+/* footer */
+
+.footer
+{
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #2f2f2f;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.footer-child
+{
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-list
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.footer-list a
+{
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.footer-list a:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.map
+{
+    padding: 0;
+    overflow: visible;
+}
+
+.map h3
+{
+    padding: 0;
+}
+
+.map iframe
+{
+    display: block;
+}
+
+.footer-bottom
+{
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+@media (max-width: 1100px)
+{
+    .footer-grid
+    {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px)
+{
+    .footer-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
