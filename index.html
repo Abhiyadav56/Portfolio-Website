@@ -1,16 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=./Portfolio%20Website/index.html">
-  <script>
-    window.location.replace('./Portfolio%20Website/index.html');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Yadav | Portfolio</title>
+    <link rel="stylesheet" href="./Portfolio%20Website/index.css">
+    <link rel="icon" href="./Portfolio%20Website/abcd.jpg">
 </head>
 <body>
-  <p>Redirecting to portfolio...</p>
-  <p>If not redirected, <a href="./Portfolio%20Website/index.html">click here</a>.</p>
+
+    <!--header-->
+    <header class="header">
+        <div class="logo">Portfolio</div>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-item" data-target="home" tabindex="0">Home</li>
+                <li class="nav-item" data-target="projects" tabindex="0">Projects</li>
+                <li class="nav-item" data-target="work-experience" tabindex="0">Work</li>
+                <li class="nav-item" data-target="about" tabindex="0">About</li>
+                <li class="nav-item" data-target="contact" tabindex="0">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--banner-->
+    <section class="banner" id="home">
+        <div class="details">
+            <p class="t1">Hello, I'm</p>
+            <p class="t2">Abhishek Yadav</p>
+            <p class="t3">Computer Science & Engineering Student.</p>
+            <button class="cta" id="connect-btn">Let's Connect</button>
+        </div>
+
+        <div class="person">
+            <img class="hero-image" src="./Portfolio%20Website/abhishek.jpeg" alt="Abhishek Yadav">
+        </div>
+    </section>
+
+
+    <!--projects-->
+    <section class="services" id="projects">
+
+        <h1 class="section-title">Projects I Built</h1>
+
+        <div class="section-child project-grid">
+
+            <div class="service project-card">
+                <h2>Nayay Setu (Ongoing)</h2>
+                <p>A legal-awareness and guidance platform project currently under active development.</p>
+                <p class="service-text">In Progress</p>
+                <button class="know project-btn" data-project="Nayay Setu" data-status="ongoing">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>Portfolio Website</h2>
+                <p>A personal portfolio with sections for intro, achievements, stack, and contact.</p>
+                <p class="service-text">HTML, CSS</p>
+                <button class="know project-btn" data-project="Portfolio Website" data-url="https://abhiyadav56.github.io/Portfolio-Website/">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>Gym Management System</h2>
+                <p>Internship project for role-based gym operations, member management, billing, and reports.</p>
+                <p class="service-text">HTML, CSS, JavaScript</p>
+                <button class="know project-btn" data-project="Gym Management System" data-url="https://abhiyadav56.github.io/GYM-Management-System/">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>Student-Teacher Appointment System</h2>
+                <p>Campus appointment platform with registration, approvals, booking, and messaging workflows.</p>
+                <p class="service-text">HTML, CSS, JavaScript</p>
+                <button class="know project-btn" data-project="Student-Teacher Appointment System" data-url="https://abhiyadav56.github.io/Student-Teacher-Booking-Appointment/">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>To-Do List Application</h2>
+                <p>Task manager with priorities, filtering, due dates, localStorage persistence, and editing.</p>
+                <p class="service-text">HTML, CSS, JavaScript</p>
+                <button class="know project-btn" data-project="To-Do List Application" data-url="https://abhiyadav56.github.io/ToDo-App/">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>Basic Calculator</h2>
+                <p>Web calculator with arithmetic operations, memory controls, keyboard support, and clean UI.</p>
+                <p class="service-text">HTML, CSS, JavaScript</p>
+                <button class="know project-btn" data-project="Basic Calculator" data-url="https://abhiyadav56.github.io/Basic-calculator/">View Project</button>
+            </div>
+
+            <div class="service project-card">
+                <h2>Tic-Tac-Toe Game</h2>
+                <p>Game project featuring player-vs-AI logic and strategic move decisions.</p>
+                <p class="service-text">HTML, CSS, JavaScript</p>
+                <button class="know project-btn" data-project="Tic-Tac-Toe Game" data-url="https://abhiyadav56.github.io/Tic-Tac-Toe/">View Project</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--work experience-->
+    <section class="work-experience" id="work-experience">
+        <h1 class="section-title">Work Experience</h1>
+
+        <div class="work-subsections">
+
+            <div class="work-subsection">
+                <h2>Internship</h2>
+
+                <div class="internship-content">
+                    <div class="internship-info">
+                        <p class="about-highlight">Internship successfully completed</p>
+                        <p>Completed internship tasks with practical project work, team coordination, and on-time delivery of development modules.</p>
+                        <p class="about-meta">Gained hands-on experience in real workflow execution, reporting, and software implementation.</p>
+                        <p class="about-meta">Outcome: Internship Certificate and Letter of Recommendation (LOR).</p>
+                    </div>
+
+                    <div class="internship-docs">
+                        <div class="internship-doc">
+                            <h3>Internship Certificate</h3>
+                            <iframe class="document-preview" src="./Portfolio%20Website/Certificate.pdf" title="Internship Certificate Preview"></iframe>
+                            <div class="document-actions">
+                                <a class="doc-btn" href="./Portfolio%20Website/Certificate.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                                <a class="doc-btn doc-btn-alt" href="./Portfolio%20Website/Certificate.pdf" download>Download</a>
+                            </div>
+                        </div>
+
+                        <div class="internship-doc">
+                            <h3>LOR</h3>
+                            <iframe class="document-preview" src="./Portfolio%20Website/LOR.pdf" title="LOR Preview"></iframe>
+                            <div class="document-actions">
+                                <a class="doc-btn" href="./Portfolio%20Website/LOR.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                                <a class="doc-btn doc-btn-alt" href="./Portfolio%20Website/LOR.pdf" download>Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--education-->
+    <section class="about-profile" id="about">
+
+        <h1 class="section-title">Education Qualification</h1>
+
+        <div class="about-grid education-grid">
+
+            <div class="about-card">
+                <h2>B.Tech in Computer Science &amp; Engineering (4th Year)</h2>
+                <p class="about-highlight">Till 7th Semester: 6.5 CGPA</p>
+                <p class="about-meta">College: Faculty of Engineering and Technology, Agra College, Agra</p>
+                <p class="about-meta">University: Dr. A.P.J. Abdul Kalam Technical University, Lucknow</p>
+                <p class="about-meta">Class 12th: 75% (KVS No. 2, Jhansi Cantt, Jhansi)</p>
+                <p class="about-meta">Class 10th: 82% (KVS No. 2, Jhansi Cantt, Jhansi)</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--activities-->
+    <section class="about-profile activities-profile">
+
+        <h1 class="section-title">Extracurricular Activities</h1>
+
+        <div class="about-grid activities-grid">
+
+            <div class="about-card">
+                <h2>NCC (National Cadet Corps)</h2>
+                <p class="about-highlight">Active extracurricular participation</p>
+                <p>Participated in NCC discipline training, teamwork activities, drills, and leadership-building events.</p>
+                <p class="about-meta">Built confidence, responsibility, and communication skills.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>College Fests</h2>
+                <p class="about-highlight">Technical &amp; cultural fest involvement</p>
+                <p>Contributed to college fest activities through participation, event coordination, and team collaboration.</p>
+                <p class="about-meta">Engaged in both technical and extracurricular campus events.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--acheivments-->
+    <section class="acheivements">
+
+        <div class="section-child acheivement-child">
+
+            <div class="acheivement">
+                <p class="number">9+</p>
+                <p class="tag">Portfolio &amp; client projects</p>
+            </div>
+
+            <div class="acheivement">
+                <p class="number">5+</p>
+                <p class="tag">Hackathons participated</p>
+            </div>
+
+            <div class="acheivement">
+                <p class="number">300+</p>
+                <p class="tag">DSA problems solved</p>
+            </div>
+
+            <div class="acheivement">
+                <p class="number">1</p>
+                <p class="tag">Internship completion with Certificate &amp; LOR</p>
+            </div>
+
+            <div class="acheivement">
+                <p class="number">100%</p>
+                <p class="tag">On-time project submissions</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--quote area-->
+    <section class="quote" id="quote">
+
+        <div class="overlay">
+
+            <div class="quote-area">
+                <input type="email" class="inp-email" id="quote-email" placeholder="Enter your email for project discussion">
+                <button class="cta" id="quote-btn">Send Project Inquiry</button>
+                <p id="quote-message" class="quote-message"></p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- clients -->
+    <section class="clients">
+
+        <h1 class="section-title">Tech Stack</h1>
+
+        <div class="client-section-child">
+            <img class="client-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="120" height="120">
+            <img class="client-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="120" height="120">
+            <img class="client-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="120" height="120">
+            <img class="client-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="120" height="120">
+        </div>
+
+    </section>
+
+
+    <!--footer-->
+    <footer class="footer" id="contact">
+
+        <div class="footer-grid">
+
+            <div class="footer-child">
+                <h3>Quick Links</h3>
+                <ul class="footer-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#quote">Project Inquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-child">
+                <h3>Contact</h3>
+                <ul class="footer-list">
+                    <li>Tundla, Firozabad, Uttar Pradesh, India</li>
+                    <li><a href="tel:+918127686301">+91 81276 86301</a></li>
+                    <li><a href="mailto:singhyadavabhishek5674@gmail.com">singhyadavabhishek5674@gmail.com</a></li>
+                    <li><a href="https://github.com/Abhiyadav56" target="_blank" rel="noopener noreferrer">github.com/Abhiyadav56</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-child map">
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191763.799988202!2d80.53473294311365!3d27.144160334942665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397468eeec83732f%3A0x5a73180a17478625!2sTundla%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1702486092467!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Abhishek Yadav. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="./Portfolio%20Website/index.js"></script>
 </body>
 </html>
