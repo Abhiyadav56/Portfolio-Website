@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
             if (!isValidEmail) {
-                updateQuoteMessage('Please enter a valid email address.', 'error');
+                updateQuoteMessage('Please enter a valid email.', 'error');
                 quoteEmail.focus();
                 return;
             }
 
             updateQuoteMessage('Opening your email app...', 'success');
-            const subject = encodeURIComponent('Project Inquiry - Portfolio Website');
-            const body = encodeURIComponent(`Hi Abhishek,%0D%0A%0D%0AI am interested in discussing a project.%0D%0AYou can reach me at: ${email}`);
+            const subject = encodeURIComponent('Project Discussion');
+            const body = encodeURIComponent(`Hi Abhishek,%0D%0A%0D%0AI visited your portfolio and wanted to connect.%0D%0AMy email: ${email}%0D%0A%0D%0AThanks.`);
             window.location.href = `mailto:singhyadavabhishek5674@gmail.com?subject=${subject}&body=${body}`;
         });
     }
@@ -72,14 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const status = button.getAttribute('data-status');
 
             if (status === 'ongoing') {
-                window.alert(`${projectName} is currently ongoing. Demo link will be added soon.`);
+                window.alert(`${projectName} is still in progress. I will add the live demo soon.`);
                 return;
             }
 
             if (projectUrl) {
                 window.open(projectUrl, '_blank');
             } else {
-                window.alert(`Project link not added for ${projectName} yet.`);
+                window.alert(`Link for ${projectName} is not added yet.`);
             }
         });
     });

@@ -416,7 +416,7 @@ html
 
 .activities-grid .about-card
 {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 48px) / 3);
 }
 
 .about-card

@@ -1,43 +1,27 @@
-# Portfolio Website
+# Abhishek Yadav Portfolio Website
 
-This repository hosts my personal portfolio website and supporting static assets.
+This repository contains my personal portfolio and project showcase.
 
-## Live Website
+## Live Portfolio
 
-- https://abhiyadav56.github.io/Portfolio-Website/
+- https://abhiyadav56.github.io/Portfolio-Website/Portfolio%20Website/
 
-## Project Structure
+## Project Links
 
-- `index.html` : Main GitHub Pages entry file (no redirect)
-- `Portfolio Website/index.html` : Source portfolio page
-- `Portfolio Website/index.css` : Styling
-- `Portfolio Website/index.js` : Interactivity
-- `Portfolio Website/abhishek.jpeg` : Hero image
-- `Portfolio Website/Certificate.pdf` : Internship certificate
-- `Portfolio Website/LOR.pdf` : Letter of Recommendation
+- Portfolio Website: https://abhiyadav56.github.io/Portfolio-Website/Portfolio%20Website/
+- Gym Management System: https://abhiyadav56.github.io/GYM-Management-System/
+- Student-Teacher Appointment System: https://abhiyadav56.github.io/Student-Teacher-Booking-Appointment/
+- To-Do App: https://abhiyadav56.github.io/ToDo-App/
+- Basic Calculator: https://abhiyadav56.github.io/Basic-calculator/
+- Tic-Tac-Toe: https://abhiyadav56.github.io/Tic-Tac-Toe/
 
-## Highlights
+## Source Files
 
-- Sticky navigation with smooth scrolling
-- Projects section with live GitHub Pages links
-- Work experience and internship documents preview
-- Education and extracurricular sections
-- Contact and inquiry actions
+- `Portfolio Website/index.html`
+- `Portfolio Website/index.css`
+- `Portfolio Website/index.js`
 
-## Local Run
+## Contact
 
-```bash
-cd js
-python3 -m http.server 5500
-```
-
-Open:
-
-- http://localhost:5500/
-
-## Deployment
-
-GitHub Pages is served from:
-
-- Branch: `main`
-- Folder: `/(root)`
+- GitHub: https://github.com/Abhiyadav56
+- Email: singhyadavabhishek5674@gmail.com
